@@ -22,7 +22,7 @@ class Banner extends Component {
         >
           fine artist
         </h1>
-        <NavBar />
+        <NavBar {...this.props}/>
       </div>
     )
   }
