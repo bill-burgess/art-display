@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 const Banner = require('../components/banner')
+const Footer = require('../components/footer')
 
 class App extends Component {
 
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div>
         <Banner {...this.props}/>
+        <Footer {...this.props}/>
       </div>
     )
   }
