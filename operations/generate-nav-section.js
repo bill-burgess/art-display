@@ -13,6 +13,7 @@ function generateNavSection (navSection, navDropdown, navMouseOver, dispatch){
     <div
       onMouseEnter={()=>dispatch({type: 'SHOW_DROPDOWN', payload: navSection.id})}
       onMouseLeave={()=>dispatch({type: 'SHOW_DROPDOWN', payload: null})}
+      key={navSection.id}
     >
       <div
         id={`nav${navSection.name}`}
