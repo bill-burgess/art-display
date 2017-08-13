@@ -47,8 +47,16 @@ body {
  opacity: 0.4;
 }
 
+#navDropdownGallery {
+  margin-left: 17.5%;
+}
+
 #navDropdownAbout {
-  margin-left: 29%;
+  margin-left: 29.5%;
+}
+
+#navDropdownContact {
+  margin-left: 42.5%;
 }
 
 .navBar {
@@ -58,6 +66,7 @@ body {
   margin-top: 3.8vh;
   margin-left: 15%;
   font-size: 2.5vh;
+  cursor: default;
 }
 
 .banner {
@@ -82,14 +91,16 @@ body {
   padding: 0;
   list-style: none;
   position: fixed;
-  padding-top: 2vh;
-  margin-top: 6vh;
+  padding-top: 1.5vh;
+  margin-top: 6.5vh;
   background-color: black;
   font-size: 80%;
   text-align: center;
+  cursor: default;
 }
 
 .navDropdownOpt {
   padding-top:1.5vh;
   padding-bottom: 1.5vh;
+  cursor: pointer;
 }

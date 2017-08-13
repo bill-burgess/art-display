@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 
-const NavAbout = require('./nav-about')
+const _ = require('lodash')
+
+const generateNavSection = require('../../operations/generate-nav-section')
+const initialState = require('../../state')
 
 class NavBar extends Component {
 
@@ -8,26 +11,19 @@ class NavBar extends Component {
 
     const dispatch = this.props.dispatch
 
+    const state = this.props.state || initialState
+    const { navSections, navDropdown, navMouseOver } = state
+
+    const display = _.map(navSections, (navSection) => {
+      return generateNavSection(navSection, navDropdown, navMouseOver, dispatch)
+    })
+
     return (
       <div
         id='navBar'
         className='navBar'
       >
-      <div
-        id='navContact'
-        className='navBar'
-        onMouseEnter={()=>dispatch({type: 'SHOW_DROPDOWN', payload: 'contact'})}
-        onMouseLeave={()=>dispatch({type: 'SHOW_DROPDOWN', payload: null})}
-      >
-        contact
-      </div>
-        <NavAbout {...this.props}/>
-        <div
-          id='navGallery'
-          className='navBar'
-        >
-          gallery
-        </div>
+      {display}
       </div>
     )
   }
