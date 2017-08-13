@@ -5,10 +5,6 @@ const Footer = require('../components/footer')
 
 class App extends Component {
 
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     console.log(this.props.state);
     return (
@@ -21,4 +17,4 @@ class App extends Component {
 
 }
 
-export default App
+module.exports = App
