@@ -24,6 +24,22 @@ body {
   color: #29e;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
+  cursor: default;
+}
+
+#navBar {
+  width: 50%;
+  color: linen;
+  position: fixed;
+  margin-left: 40%;
+}
+
+.navBar {
+  display: inline;
+  float: right;
+  margin-top: 4vh;
+  margin-left: 15%;
+  font-size: 2.5vh;
 }
 
 .banner {
