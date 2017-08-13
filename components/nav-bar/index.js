@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 
+const NavAbout = require('./nav-about')
 
 class NavBar extends Component {
 
   render () {
+
+    const dispatch = this.props.dispatch
 
     return (
       <div
@@ -11,19 +14,16 @@ class NavBar extends Component {
         className='navBar'
       >
       <div
-        id='navAbout'
+        id='navContact'
         className='navBar'
+        onMouseEnter={()=>dispatch({type: 'SHOW_DROPDOWN', payload: 'contact'})}
+        onMouseLeave={()=>dispatch({type: 'SHOW_DROPDOWN', payload: null})}
       >
         contact
       </div>
+        <NavAbout dispatch={dispatch}/>
         <div
-          id='navAbout'
-          className='navBar'
-        >
-          about
-        </div>
-        <div
-          id='navAbout'
+          id='navGallery'
           className='navBar'
         >
           gallery
