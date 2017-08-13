@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import App from './app'
 
+const DescriptionPanel = require('../components/description-panel')
 
 class Home extends Component {
 
@@ -8,8 +9,8 @@ class Home extends Component {
     console.log(this.props.state);
     return (
       <div>
-        <App />
-        <div id='test'>TEST HERE</div>
+        <App {...this.props}/>
+        <DescriptionPanel {...this.props}/>
       </div>
     )
   }

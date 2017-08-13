@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-color: linen;
 }
 
 #bannerBar {
@@ -63,6 +64,17 @@ body {
   z-index: -1;
   color: purple;
   font-size: 50vh;
+}
+
+#descriptionPanel {
+  height: 100vh;
+  width: 30%;
+  background-color: #C2B29A;
+  float: right;
+}
+
+#homeTitle {
+  margin-top: 20vh;
 }
 
 .navBar {
