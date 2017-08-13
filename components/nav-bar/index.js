@@ -21,7 +21,7 @@ class NavBar extends Component {
       >
         contact
       </div>
-        <NavAbout dispatch={dispatch}/>
+        <NavAbout {...this.props}/>
         <div
           id='navGallery'
           className='navBar'
