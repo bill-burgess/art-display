@@ -4,6 +4,8 @@ import App from './containers/app'
 import Router from 'sheet-router'
 import { createStore } from 'redux'
 
+const Home = require('./containers/home')
+
 const initialState = require('./state')
 
 const reducer = require('./reducer')
@@ -15,7 +17,7 @@ const store = createStore(reducer, initialState)
 const { getState, dispatch, subscribe } = store
 
 const route = Router({ default: '/404' }, [
-  ['/', (params) => App]
+  ['/', (params) => Home]
 ])
 
 subscribe(() => {
