@@ -6,7 +6,6 @@ const DescriptionPanel = require('../components/description-panel')
 class Home extends Component {
 
   render () {
-    console.log(this.props.state);
     return (
       <div>
         <App {...this.props}/>

@@ -1,16 +1,16 @@
 module.exports = {
   route: '/',
-  navDropdown: null,
+  navDropdown: 'gallery',
   navMouseOver: null,
   navSections: {
-    gallery: {
-      id: 'gallery',
+    contact: {
+      id: 'contact',
       subHeaders: [
-        'view all',
-        'landscapes',
-        'portraits'
+        'email',
+        'twitter',
+        'facebook'
       ],
-      name: 'Gallery'
+      name: 'Contact'
     },
     about: {
       id: 'about',
@@ -21,14 +21,14 @@ module.exports = {
       ],
       name: 'About'
     },
-    contact: {
-      id: 'contact',
+    gallery: {
+      id: 'gallery',
       subHeaders: [
-        'email',
-        'twitter',
-        'facebook'
+        'view all',
+        'landscapes',
+        'portraits'
       ],
-      name: 'Contact'
+      name: 'Gallery'
     }
   }
 }
