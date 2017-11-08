@@ -6,7 +6,6 @@ const Footer = require('../components/footer')
 class App extends Component {
 
   render () {
-    console.log(this.props.state);
     return (
       <div>
         <Banner {...this.props}/>
